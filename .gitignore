@@ -1,5 +1,3 @@
-**/node_modules/
-
 # Ignore backend uploaded files (images, other user uploads)
 /backend/public/uploads/
 # Ignore everything in profile_pictures except the repository default image
