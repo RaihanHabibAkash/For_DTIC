@@ -43,7 +43,10 @@ const orderSchema = new mongoose.Schema({
     amount: { type: Number },
     raw: { type: mongoose.Schema.Types.Mixed }
   },
-  status: { type: String, enum: ['pending', 'accepted', 'shipped', 'delivered', 'cancelled'], default: 'pending' },
+  status: { 
+    type: String, 
+    enum: ['pending', 'accepted', 'shipped', 'delivered', 'cancelled'], 
+    default: 'pending' },
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now },
 });
